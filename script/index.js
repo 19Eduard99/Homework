@@ -6,7 +6,7 @@ objectUser.surname = 'Smith';
 objectUser.name = 'Pete';
 delete objectUser.name
 
-// объект объявленный с помощью const можно изменить потомучто это ссылочный тип данных
+// объект объявленный с помощью const можно изменить потомучто, объект - это ссылочный тип данных
 const user = {
     name: 'John'
 };
