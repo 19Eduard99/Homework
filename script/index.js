@@ -5,7 +5,8 @@ const admin = name;
 
 alert(admin);
 
-let earth;
+let ourPlanet;
+ourPlanet = "Earth";
 let user;
 
 const sum = "10" + 10;
