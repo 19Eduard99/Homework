@@ -1,10 +1,11 @@
 'use strict';
 
-let objectUser = {}
+const objectUser = {}
 objectUser.name = 'John';
 objectUser.surname = 'Smith';
 objectUser.name = 'Pete';
-delete objectUser.name
+delete objectUser.name;
+console.log(objectUser);
 
 // объект объявленный с помощью const можно изменить потомучто, объект - это ссылочный тип данных
 const user = {
@@ -13,7 +14,7 @@ const user = {
 user.name = 'Pete';
 console.log(user);
 
-let salaries = {
+const salaries = {
     John: 100,
     Ann: 160,
     Pete: 130
