@@ -12,7 +12,7 @@ if(a < 1999  || a > 1999 || isNaN(a)) {
 
 //Задание 2
 
-let numOrStr1 = prompt('input number or string');
+const numOrStr1 = prompt('input number or string');
 
 switch (true){
     case (numOrStr1 === null):
