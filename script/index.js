@@ -3,50 +3,42 @@
 //-------------------- 1
 
 const zero = +prompt("Enter zero: ");
-const zeroResult = zero === 0 ? "Верно" : "Неверно";
-console.log(zeroResult);
+console.log(zero === 0 ? "Верно" : "Неверно");
 
 //-------------------- 2
 
 const aZero = +prompt("Enter number: ");
-const aZ = aZero > 0 ? "Верно" : "Неверно";
-console.log(aZ);
+console.log(aZero > 0 ? "Верно" : "Неверно");
 
 //-------------------- 3
 
 const mZero = +prompt("Enter number: ");
-const mZ = mZero < 0 ? "Верно" : "Неверно";
-console.log(mZ);
+console.log(mZero < 0 ? "Верно" : "Неверно");
 
 //-------------------- 4
 
 const lZero = +prompt("Enter number: ");
-const lZ = lZero >= 0 ? "Верно" : "Неверно";
-console.log(lZ);
+console.log(lZero >= 0 ? "Верно" : "Неверно");
 
 //-------------------- 5
 
 const equalsZero = +prompt("Enter number: ");
-const eZero = equalsZero <= 0 ? "Верно" : "Неверно";
-console.log(eZero);
+console.log(equalsZero <= 0 ? "Верно" : "Неверно");
 
 //-------------------- 6
 
 const noZero = +prompt("Enter number: ");
-const nZero = noZero !== 0 ? "Верно" : "Неверно";
-console.log(nZero);
+console.log(noZero !== 0 ? "Верно" : "Неверно");
 
 //-------------------- 7
 
 const test = prompt("Enter 'test': ");
-const sTest = test === 'test' ? "Верно" : "Неверно";
-console.log(sTest);
+console.log(test === 'test' ? "Верно" : "Неверно");
 
 //-------------------- 8
 
 const one = prompt("Enter '1': ");
-const resultOne = one === '1' ? "Верно" : "Неверно";
-console.log(resultOne);
+console.log(one === '1' ? "Верно" : "Неверно");
 
 //-------------------- 9
 
