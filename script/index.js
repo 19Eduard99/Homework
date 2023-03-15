@@ -1,7 +1,11 @@
 'use strict';
 
+//------------1
+
 const x = 10, y = 7;
 console.log(x > y ? "X больше, чем Y" : "X не больше, чем Y");
+
+//------------2
 
 const num = +prompt("Введите первое число: ");
 if(num % 2 === 0){
@@ -9,6 +13,8 @@ if(num % 2 === 0){
 } else {
     alert("Число " + num + " не четное");
 }
+
+//------------3
 
 const num2 = prompt("Введите целое число:");
 let numLength = num2.length;
@@ -37,4 +43,16 @@ if (num2[0] > num2[1] && num2[0] > num2[2] ){
     console.log("Цифра " + num2[1] + " больше чем " + num2[0] + " и " + num2[2] );
 } else {
     console.log("Цифра " + num2[2] + " больше чем " + num2[0] + " и " + num2[1] );
+}
+
+//------------3
+
+const a = +prompt("Введите длину стороны a");
+const b = +prompt("Введите длину стороны b");
+const c = +prompt("Введите длину стороны c");
+
+if (a + b > c && a + c > b && b + c > a) {
+    console.log("Треугольник существует");
+} else {
+    console.log("Треугольник не существует");
 }
