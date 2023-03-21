@@ -85,7 +85,7 @@ for(let i = 1; i <= number; i++){
         }
     }
 }
-console.log('Дільники числа 12: ' + output2)
+console.log('Дільники числа ' + number + ':' + output2)
 console.log('Кількість його парних дільників: ' + d)
 console.log('Сума парних дільників: ' + sum4)
 console.log('');
