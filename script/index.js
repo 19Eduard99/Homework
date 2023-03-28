@@ -1,16 +1,15 @@
 'use strict';
 
 const num = +prompt('Enter number');
-let bol = true
+let bol = true;
 if (num < 2) {
-    bol = false
+    bol = false;
 }   else {
         for (let  i = 2; i < num; i++){
             if (num % i === 0){
                 bol = false;
-                break
+                break;
             }
         }
 }
-console.log(bol)
-
+console.log(bol);
