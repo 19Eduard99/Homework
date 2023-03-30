@@ -1,11 +1,15 @@
 'use strict';
-const a = prompt('Введите число ');
-const b = prompt('Введите степень ');
+const num  = prompt('Введите число ');
+const degree  = +prompt('Введите степень ');
 
-function f1(a,b =1 ) {
-   if(isNaN(a) || isNaN(b)) return  alert('error');
-   return Math.pow(a, b);
+function  operation(num ,degree  = 1 ) {
+   if(isNaN(num) || isNaN(degree) || num === null || degree  === null){
+      return  alert('error');
+   }
+      return Math.pow(num , degree );
 }
 
-const result = f1(a, b);
-alert(result);
+const result = operation(num , degree);
+if(result !== undefined){
+   alert(operation(num , degree));
+}
