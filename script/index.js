@@ -3,8 +3,6 @@ const num  = prompt('Введите число ');
 const degree  = prompt('Введите степень ');
 
 function  operation(num ,degree  = 1 ) {
-   console.log(num)
-   console.log(degree)
    if(isNaN(num) || isNaN(degree) || num === null || degree  === null || num.trim() === "" || degree.trim() === ""){
       return  alert('error');
    }
