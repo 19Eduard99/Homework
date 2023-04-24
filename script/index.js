@@ -2,6 +2,7 @@
 
 //1
 const array = [2, 5, 7, 9, 9];
+// let a = array.some()
 
 const myIndexOf = (arr, elm) => {
     for (let i = 0; i < arr.length; i++){
@@ -25,56 +26,56 @@ const myLastIndexOf = (arr, elm) => {
 console.log(myLastIndexOf(array,9));
 
 //3
-const myFind = (arr) => {
+const myFind = (arr, call) => {
         for (let i = 0; i < arr.length; i++){
-            if(arr[i] === 7) {
+            if(call(arr[i])) {
                 return arr[i];
             }
         }
     return undefined;
 }
-console.log(myFind(array));
+console.log(myFind(array, (item) => item > 5));
 
 //4
-const myFindIndex = (arr) => {
+const myFindIndex = (arr, call) => {
     for (let i = 0; i < arr.length; i++){
-        if(arr[i] === 7) {
+        if(call(arr[i])) {
             return i;
         }
     }
     return undefined;
 }
-console.log(myFindIndex(array));
+console.log(myFindIndex(array,(item) => item > 5));
 
 //5
-const myIncludes = (arr, num) => {
-    for (let i = 0; i < arr.length; i++){
-        if(arr[i] === num) {
+const myIncludes = (num) => {
+    for (let i = 0; i < array.length; i++){
+        if(array[i] === num) {
             return true;
         }
     }
     return false;
 }
-console.log(myIncludes(array, 7));
+console.log(myIncludes( 5));
 
 //6
-const myEvery = (arr) => {
+const myEvery = (arr, call) => {
     for (let i = 0; i < arr.length; i++){
-        if(arr[i] < 1){
+        if(!call(arr[i])){
             return false
         }
     }
     return true
 }
-console.log(myEvery(array));
+console.log(myEvery(array, (item) => item > 1));
 
 //7
-const mySome = (arr) => {
+const mySome = (arr, call) => {
     for (let i = 0; i < arr.length; i++){
-        if(arr[i] >= 1){
+        if(call(arr[i])){
             return true
         }
     }
     return false
 }
-console.log(mySome(array));
+console.log(mySome(array, (item) => item < 1));
