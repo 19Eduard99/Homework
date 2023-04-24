@@ -2,7 +2,6 @@
 
 //1
 const array = [2, 5, 7, 9, 9];
-// let a = array.some()
 
 const myIndexOf = (arr, elm) => {
     for (let i = 0; i < arr.length; i++){
